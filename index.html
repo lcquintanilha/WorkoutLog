@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Log</title>
+</head>
+<body>
+    <h1>Workout Log</h1>
+    <section class="container">
+        <div id="inputDiv">
+            <span class="insert-item">Insert an item</span>
+            <form id="form">
+                <input type="number" placeholder="Time spent" id="timeInput">
+                <select type="text" list="workoutTypeList" id="workoutTypeInput">
+                    <option value="Run">Run</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Bike">Bike</option>
+                </select>
+                <input type="date" id="dateInput" placeholder="  /  /  ">
+                <button id="submit">Add</button>
+            </form>
+        </div>
+        <div id="divisoria"></div>
+        <div id="tableDiv">
+            <table id="table">
+                <thead>
+                    <th scope="col" class="cabecalho">Tempo<span class="orderIcon" id="orderIconTempo"  onclick="ordenarTempo()"></span></th>
+                    <th scope="col"class="cabecalho">Tipo<span class="orderIcon" id="orderIconTipo"  onclick="ordenarTipo()"></span></th>
+                    <th scope="col"class="cabecalho">Data<span class="orderIcon" id="orderIconData"  onclick="ordenarData()"></span></th>
+                    <th scope="col" class="acao"></th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3><span id="counter">0</span> hours of exercises</h3>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+</html>
