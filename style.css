@@ -129,7 +129,7 @@ tr:nth-child(even) {
     border-right: 5px solid transparent;
     border-top: 5px solid #000;
     position: absolute;
-    right: 5px; /* Ajuste conforme necessário para posicionar o ícone à direita */
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
