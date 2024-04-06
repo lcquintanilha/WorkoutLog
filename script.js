@@ -154,12 +154,12 @@ function ordenarData() {
 function ordenarTipo() {
     function compararPorTipo(a, b) {
         if (a.tipo < b.tipo) {
-            return -1; // a deve vir antes de b
+            return -1;
           }
         if (a.tipo > b.tipo) {
-            return 1; // b deve vir antes de a
+            return 1;
         }
-            return 0; // nomes são iguais
+            return 0;
         };
 
     dadosExercicios.sort(compararPorTipo);
